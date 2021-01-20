@@ -1,4 +1,4 @@
-import Deed from "./contracts/Deed.json";
+import DeedMultiPayouts from "./contracts/DeedMultiPayouts.json";
 
 const options = {
   web3: {
@@ -8,10 +8,7 @@ const options = {
       url: "ws://127.0.0.1:9545",
     },
   },
-  contracts: [Deed],
-  events: {
-    Deed: ["txnSuccess"],
-  },
+  contracts: [DeedMultiPayouts],
   polls: {
     accounts: 15000,
   },

@@ -1,5 +1,5 @@
-const Deed = artifacts.require("Deed");
+const DeedMultiPayouts = artifacts.require("DeedMultiPayouts");
 
 module.exports = function (deployer, _network, accounts) {
-  deployer.deploy(Deed, accounts[0], accounts[1], 60);
+  deployer.deploy(DeedMultiPayouts, accounts[0], accounts[1], 60);
 };
